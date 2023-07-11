@@ -1,7 +1,7 @@
 <html>
     <head>
         <script>
-            fetch('/api/data')
+            fetch('/')
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById('name').textContent = data.name;
