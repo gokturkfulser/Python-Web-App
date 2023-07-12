@@ -23,9 +23,9 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def hello():
     if request.method == 'POST':
-        name = request.form.get('name', 'Goko')  # Get the 'name' value from the submitted form data
+        name = request.form.get('name', 'gokkooooo')  # Get the 'name' value from the submitted form data
     else:
-        name = 'Goko'  # Default value if 'name' is not provided
+        name = 'enter your name'  # Default value if 'name' is not provided
         
     return render_template('index.html', name=name)
 
